@@ -1,34 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assignment css properties</title>
+    <title>Harsha Protfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        .image{
-            background-image: url(/mou.jpg);
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins' sans-serif;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #080808;
+            color: #fff;
+        }
+        
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-image: url();
             background-size: cover;
             background-position: center;
-            height: 300px;
         }
-        .para{
-            color: white;
-            display: block;
-            font-size: 20px;
-            margin-left: 20px;
+        
+        .container {
+            padding: 10px 10%;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            width: 120px;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
             position: relative;
-            top: 80%;
-            background-color: white;
-            color: black;
-            opacity: .3;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        .header-text {
+            margin-top: 20%;
+            font-size: 30px;
+            margin-left: 20px;
+        }
+        
+        .header-text h2 {
+            font-size: 60px;
+            margin-top: 30px;
+        }
+        
+        .header-text h2 span {
+            color: #ff004f;
+        }
+        
+        #har {
+            float: right;
+            width: 30%;
+            flex-basis: 40%;
+        }
+        
+        #about {
+            border-width: 20%;
+            font-size: 250%;
+        }
+        
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
         }
     </style>
+
 </head>
+
 <body>
-    <h1>CSS PROPERTIES</h1>
-    <div class="image">
-        <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, ducimus?</p>
+    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
+        <div class="container">
+            <img src="logo.png" class="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="har"><img src="Harsha.jpg" width="400" height="460"> </div>
+    <div class="header-text">
+        <p>Full Stack Web Developer</p>
+        <h2>Hi,I'm <span>ShriHarsha HR</span><br> From Bangalore. </h2>
+
     </div>
+
+    </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- about section-->
+
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <center>
+                <h1 style="color: #ff004f;">About Me</h1>
+            </center>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/about.jpeg" class="imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+
+                    <p style="color: aqua;"> Objective</p>
+                    <p> To be a Successful professional in a Globally Respected Company and to achieve the objectives of the company with Honesty and Fairness and to Continuously Upgrade My Knowledge and Skills.</p> <br>
+                    <p style="color: aqua;"> Education</p>
+                    <p> Pursuing Masters in full Stack Development Bangalore - 2022 <br> IT Vedant Education Pvt Ltd Bangalore <br> <br>Bachelor of Commerce – 2022. <br> Om Prabha Evening College Bangalore KA <br><br> Pre-University Course – 2019. <br> Om
+                        Prabha Evening College Bangalore KA <br><br> Secondary School Leaving Certificate – 2014 <br> Government High School Mandya KA.</p> <br> WORK EXPERIENCE <br> Control InfoTech Pvt Ltd – Bangalore. <br> Store, Purchase & Accounts
+                    Assistant – 2017 to 2021. <br> <br>
+                    <p style="color: aqua;">PROJECTS</p>Student Management (Flask Project). <br>In the project all basic create, read, update & delete operations can be performed. All institutions to who maintain student data can use this Web Application. <br> <br>
+
+                    <p style="color: aqua;"> TECHNICAL SKILLS </p> Python with Flask.<br> • MySQL.<br> • HTML5. <br> • CSS3.<br> • JavaScript.<br> • AWS (Basic). <br> <br>
+                    <p style="color: aqua;">CERTIFICATIONS </p> IBM Python Certification and Infosys Spring Board. <br> Linked Skill Assessment Badge for Python.<br> IT Vedant Certification for Python, MySQL, Web Designing Essential. <br><br>
+                    <p style="color: aqua;"> DECLARATION </p> I hereby declare that the above given information are true and to the best of my knowledge.
+                    </p>
+
+    </section> <br>
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <center>
+                <h1 style="color: #ff004f;font-size: 40px;">Contact Me</h1>
+            </center>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+
+                    <p style="font-size:30px;"> Name : Shri Harsha HR <br> Contact No : 7619565351 <br>
+                        <a href="mailto:shriharsha1998hr@gmail.com"> mail to Harsha</a>.
+                    </p>
+    </section>
+
+
+
+
+    <center>
+        <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://www.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+    </center>
+
+
+
+    <script>
+        // add class navbarDark on navbar scroll
+        const header = document.querySelector('.navbar');
+
+        window.onscroll = function() {
+            var top = window.scrollY;
+            if (top >= 100) {
+                header.classList.add('navbarDark');
+            } else {
+                header.classList.remove('navbarDark');
+            }
+        }
+    </script>
 </body>
+
 </html>
